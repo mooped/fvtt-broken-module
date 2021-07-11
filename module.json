@@ -1,0 +1,23 @@
+{
+  "name": "fvtt-broken-module",
+  "title": "Test module for a FVTT bug",
+  "description": "Foundry freezes on a grey screen with no obvious error message if multiple packs point at the same db.",
+  "author": "Steve Barnett",
+  "version": "0.0.1",
+  "minimumCoreVersion": "0.8.5",
+  "compatibleCoreVersion": "0.8.8",
+  "packs": [
+    {
+      "name": "test-pack-1",
+      "label": "Test Pack 1",
+      "path": "packs/test.db",
+      "entity": "Actor"
+    },
+    {
+      "name": "test-pack-2",
+      "label": "Test Pack 2",
+      "path": "packs/test.db",
+      "entity": "JournalEntry"
+    }
+  ]
+}
